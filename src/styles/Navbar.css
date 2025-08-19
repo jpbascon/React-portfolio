@@ -1,0 +1,190 @@
+@import 'tailwindcss';
+
+@layer navbar {
+  .navbar {
+    box-shadow: 10px 0 20px rgba(0, 0, 0, .5);
+    @apply sticky flex justify-evenly z-50 w-full px-[12.5%] inset-x-0 top-0 h-[80px] bg-neutral-800;
+  }
+
+  .left-section,
+  .right-section {
+    @apply flex flex-row items-center w-full;
+  }
+
+  .left-section {
+    @apply justify-start;
+
+    & #portfolio {
+      font-family: "Space Mono";
+    }
+
+    & p {
+      @apply text-xl md:text-2xl font-bold text-green-400;
+    }
+  }
+
+  .right-section {
+    @apply flex justify-end gap-[7%] lg:gap-10 text-lg;
+
+    & .hamburger {
+      @apply px-[.6rem] py-[.5rem] hover:bg-[#1717172d] rounded-md cursor-pointer sm:hidden;
+    }
+  }
+
+  .dropdown-menu {
+    @apply fixed top-[80px] pt-2 gap-1 left-0 w-full bg-neutral-800 flex flex-col items-start justify-start px-[12.5%] z-100 overflow-hidden;
+  }
+}
+
+.hamburger {
+  transition: .15s all ease-in-out;
+}
+
+.hamburger svg path {
+  stroke: #fff;
+  transition: 0.15s all ease-in-out;
+}
+
+.hamburger:hover svg path {
+  stroke: #05df72;
+}
+
+.animate-slide-down {
+  animation: dropdown-slide-down 0.2s ease forwards;
+}
+
+.animate-slide-up {
+  animation: dropdown-slide-up 0.2s ease forwards;
+}
+
+@keyframes dropdown-slide-down {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 190px;
+  }
+}
+
+@keyframes dropdown-slide-up {
+  from {
+    height: 190px;
+  }
+
+  to {
+    height: 0;
+  }
+}
+
+.nav-link-underline {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  box-shadow: 0 0 30px #05df72;
+  background-color: #05df72;
+  transition: width .15s ease-in-out, text-shadow .15s ease-in-out;
+}
+
+.nav-link-underline:hover::after,
+.nav-link-underline:focus::after {
+  width: 100%
+}
+
+.nav-link-underline.active::after {
+  width: 100%
+}
+
+.dropdown-hover {
+  position: relative;
+  width: 100%;
+  padding: 2% 4% 2% 4%;
+  border-radius: 6px;
+  transition: box-shadow .06s ease-in-out, color .06s ease-in-out;
+}
+
+.dropdown-hover:hover {
+  color: #05df72;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+/* .dropdown-hover::after {
+  content: "";
+  position: absolute;
+  left: -8%;
+  top: 50%;
+  height: 2px;
+  width: 0;
+  border-radius: 2px;
+  box-shadow: 0 0 30px #05df72;
+  background-color: #05df72;
+  transition: width 1s ease-in-out, text-shadow .15s ease-in-out;
+}
+
+.dropdown-hover.active::after {
+  width: 5%;
+  color: #05df72;
+  animation: underline 2s infinite;
+} */
+
+.notBlink {
+  border-right: 6px solid white;
+}
+
+.blink {
+  border-right: 6px solid white;
+  opacity: 0;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes underline {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
