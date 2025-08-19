@@ -36,8 +36,9 @@ const Home = ({ dropDownOpen, resetMessage, setCurrentIndex }) => {
               className="text-lg button">
               Contact
             </NavLink> */}
-            <Socials />
           </div>
+          <Socials />
+
         </section>
         <section className={`${showRight ? "flex opacity-100 paragraph-animate-right" : "opacity-0"} right-wrapper`}>
           <div>
