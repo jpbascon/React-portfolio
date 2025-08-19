@@ -2,7 +2,7 @@ import Navbar from './Components/Navbar.jsx';
 import Home from './Components/Home.jsx';
 import About from './Components/About.jsx';
 import Projects from './Components/Projects.jsx';
-import Contact from './Components/Contact.jsx';
+/* import Contact from './Components/Contact.jsx'; */
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 
@@ -106,7 +106,7 @@ function App() {
           <Route path="/" element={<Home dropDownOpen={dropDownOpen} setCurrentIndex={setCurrentIndex} resetMessage={resetMessage} />} />
           <Route path="/about" element={<About dropDownOpen={dropDownOpen} />} />
           <Route path="/projects" element={<Projects dropDownOpen={dropDownOpen} />} />
-          <Route path="/contact" element={<Contact dropDownOpen={dropDownOpen} />} />
+          {/*           <Route path="/contact" element={<Contact dropDownOpen={dropDownOpen} />} /> */}
         </Routes>
       </main>
     </>

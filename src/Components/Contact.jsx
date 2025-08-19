@@ -1,4 +1,3 @@
-
 const Contact = ({ dropDownOpen }) => {
   return (
     <>

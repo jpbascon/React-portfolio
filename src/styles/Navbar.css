@@ -63,13 +63,13 @@
   }
 
   to {
-    height: 190px;
+    height: 160px;
   }
 }
 
 @keyframes dropdown-slide-up {
   from {
-    height: 190px;
+    height: 160px;
   }
 
   to {

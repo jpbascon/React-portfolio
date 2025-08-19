@@ -30,12 +30,12 @@ const Navbar = ({ dropDownOpen, closing, isHamburger, isDone, displayed, toggleD
             onClick={() => { setCurrentIndex(2); resetMessage(); }}
           >projects
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/contact"
             className={({ isActive }) => "hidden sm:flex nav-link-underline" + (isActive ? " active" : "")}
             onClick={() => { setCurrentIndex(3); resetMessage(); }}
           >contact
-          </NavLink>
+          </NavLink> */}
           <div className="hamburger"
             onClick={() => { toggleDropDown(); }}>
             {isHamburger ?
@@ -58,9 +58,9 @@ const Navbar = ({ dropDownOpen, closing, isHamburger, isDone, displayed, toggleD
             <NavLink to="/projects" className={({ isActive }) =>
               "dropdown-link dropdown-hover" + (isActive ? " active" : "")
             } onClick={() => { toggleDropDown(); setCurrentIndex(2); resetMessage(); }}>projects</NavLink>
-            <NavLink to="/contact" className={({ isActive }) =>
+            {/* <NavLink to="/contact" className={({ isActive }) =>
               "dropdown-link dropdown-hover" + (isActive ? " active" : "")
-            } onClick={() => { toggleDropDown(); setCurrentIndex(3); resetMessage(); }}>contact</NavLink>
+            } onClick={() => { toggleDropDown(); setCurrentIndex(3); resetMessage(); }}>contact</NavLink> */}
           </div>}
       </nav >
     </>
