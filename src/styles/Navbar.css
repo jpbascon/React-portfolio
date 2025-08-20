@@ -80,6 +80,11 @@
 .nav-link-underline {
   position: relative;
   cursor: pointer;
+  transition: color .15s ease-in-out;
+}
+
+.nav-link-underline:hover {
+  color: #05df72;
 }
 
 .nav-link-underline::after {
