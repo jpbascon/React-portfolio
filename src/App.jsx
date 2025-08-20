@@ -104,8 +104,8 @@ function App() {
         onClick={() => { outsideClicked(); }}>
         <Routes>
           <Route path="/" element={<Home dropDownOpen={dropDownOpen} setCurrentIndex={setCurrentIndex} resetMessage={resetMessage} />} />
-          <Route path="/about" element={<About dropDownOpen={dropDownOpen} />} />
-          <Route path="/projects" element={<Projects dropDownOpen={dropDownOpen} />} />
+          <Route path="/about" element={<About dropDownOpen={dropDownOpen} setCurrentIndex={setCurrentIndex} />} />
+          <Route path="/projects" element={<Projects dropDownOpen={dropDownOpen}, setCurrentIndex={setCurrentIndex} />} />
           {/*           <Route path="/contact" element={<Contact dropDownOpen={dropDownOpen} />} /> */}
         </Routes>
       </main>
