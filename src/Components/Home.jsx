@@ -2,7 +2,7 @@ import Socials from './Socials.jsx';
 import { useState, useEffect } from 'react';
 /* import { NavLink } from "react-router-dom"; */
 
-const Home = ({ dropDownOpen, resetMessage, setCurrentIndex }) => {
+const Home = ({ dropDownOpen/* , resetMessage, setCurrentIndex */ }) => {
   const [showLeft, setShowLeft] = useState(false);
   const [showRight, setShowRight] = useState(false);
 

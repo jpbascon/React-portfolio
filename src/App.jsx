@@ -32,7 +32,7 @@ function App() {
     }
     const timeout = setTimeout(() => { setIsDone(true); }, 80);
     return () => clearTimeout(timeout);
-  }, [charIndex, message, isDone, currentIndex])
+  }, [charIndex, message, currentIndex])
 
   useEffect(() => {
     const handleResize = () => { if (window.innerWidth >= 768) { setDropDownOpen(false); setIsHamburger(true); } };
@@ -103,7 +103,7 @@ function App() {
       <main className="wrapper"
         onClick={() => { outsideClicked(); }}>
         <Routes>
-          <Route path="/" element={<Home dropDownOpen={dropDownOpen} setCurrentIndex={setCurrentIndex} resetMessage={resetMessage} />} />
+          <Route path="/" element={<Home dropDownOpen={dropDownOpen} /* resetMessage={resetMessage} */ />} />
           <Route path="/about" element={<About dropDownOpen={dropDownOpen} />} />
           <Route path="/projects" element={<Projects dropDownOpen={dropDownOpen} />} />
           {/*           <Route path="/contact" element={<Contact dropDownOpen={dropDownOpen} />} /> */}
