@@ -40,7 +40,7 @@ const About = ({ dropDownOpen }) => {
           </div>
           <div className={`${delayFirstRow ? "flex opacity-100 image-animate" : "opacity-0"} relative justify-center w-full`}>
             <img
-              className="relative rounded-lg object-cover md:-rotate-1"
+              className="relative rounded-lg object-cover md:-rotate-1 about-img"
               src="./wordpress.png"
               alt="One of my first website creation using WordPress"></img>
             <svg className="absolute md:inline-block md:rotate-20 top-[-8%] md:top-[-13%] right-[-4%] w-[60px] md:w-[80px] lg:w-[90px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -55,7 +55,7 @@ const About = ({ dropDownOpen }) => {
         <section className="flex flex-col md:flex-row gap-8 md:gap-20 py-10 md:py-30 items-stretch justify-center m-[6%]">
           <div className={`${secondRow ? "flex paragraph-animate-left opacity-100" : "opacity-0"} relative justify-center w-full`}>
             <img
-              className="relative rounded-lg object-cover md:rotate-1 z-2"
+              className="relative rounded-lg object-cover md:rotate-1 z-2 about-img"
               src="./first_project.png"
               alt="First website creation using HTML and CSS"></img>
             <svg className="absolute inline-block md:rotate-20 top-[-14%] sm:top-[-11%] md:top-[-18%] left-[9%] md:left-[6%] w-[60px] md:w-[80px] lg:w-[100px] z-0" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -84,7 +84,7 @@ const About = ({ dropDownOpen }) => {
           </div>
           <div className={`${thirdRow ? "flex opacity-100 paragraph-animate-right" : "opacity-0"} relative justify-center w-full`}>
             <img
-              className="rounded-lg object-cover md:-rotate-1"
+              className="rounded-lg object-cover md:-rotate-1 about-img"
               src="./javascript.png"
               alt="Ecommerce Project with basic API"></img>
             <svg className="absolute md:inline-block md:rotate-14 top-[-10%] right-[-5%] w-[60px] md:w-[80px] lg:w-[100px]" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">

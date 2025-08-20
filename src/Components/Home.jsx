@@ -42,7 +42,9 @@ const Home = ({ dropDownOpen, resetMessage, setCurrentIndex }) => {
         </section>
         <section className={`${showRight ? "flex opacity-100 paragraph-animate-right" : "opacity-0"} right-wrapper`}>
           <div>
-            <img alt="My picture in a toga" src="./jasonb.jpeg" />
+            <img
+              alt="My picture in a toga"
+              src="./jasonb.jpeg" />
           </div>
         </section>
       </div>

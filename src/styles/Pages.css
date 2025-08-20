@@ -16,6 +16,10 @@
   .about-wrapper.active {
     @apply opacity-[.1] pointer-events-none;
   }
+
+  .about-img {
+    box-shadow: 0 0 24px rgba(0, 0, 0, .6);
+  }
 }
 
 @layer projects {
