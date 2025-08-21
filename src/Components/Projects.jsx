@@ -33,7 +33,7 @@ const Projects = ({ dropDownOpen }) => {
         <section className="flex flex-col md:flex-row items-center justify-center gap-10 py-20 w-full">
           <div className={`${firstRow ? "opacity-100 paragraph-animate-left" : "opacity-0"} w-full`}>
             <img
-              className="rounded-lg"
+              className="rounded-lg about-img"
               src="./movie-app.png"
               alt="Movie Application"
             ></img>
@@ -48,7 +48,7 @@ const Projects = ({ dropDownOpen }) => {
         <section className="flex flex-col md:flex-row items-center justify-center gap-10 py-20 w-full">
           <div className={`${secondRow ? "opacity-100 paragraph-animate-left" : "opacity-0"} w-full`}>
             <img
-              className="rounded-lg"
+              className="rounded-lg about-img"
               src="./javascript.png"
               alt="E-commerce website application"
             ></img>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
 
 @layer base {
@@ -39,15 +40,51 @@
     box-shadow: 0 0 25px rgba(0, 0, 0, .5);
   }
 
-  .spacer {
-    box-shadow: 0 0 25px #05df72;
-  }
-
-  .or {
-    text-shadow: 0 0 25px#05df72;
+  .submit-button {
+    font-family: "Roboto";
   }
 }
 
+.floating-label {
+  position: relative;
+  width: 100%;
+}
+
+.floating-label .input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #444;
+  background: transparent;
+  outline: none;
+  resize: none;
+  padding: 8px 0 4px;
+  font-size: 1rem;
+}
+
+.floating-label label {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  font-size: 0.9rem;
+  color: #666;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.floating-label .input:focus+label,
+.floating-label .input:not(:placeholder-shown)+label {
+  top: -10px;
+  font-size: 0.75rem;
+  color: #05df72;
+}
+
+.floating-label .input:focus {
+  border-color: #05df72;
+}
+
+.floating-label .input:hover {
+  border-color: #05df72;
+}
 
 @layer home {
   .home-wrapper {
@@ -88,6 +125,7 @@
 
     & .button {
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      font-family: "Roboto", sans-serif;
       transition: color .12s ease-in-out, filter 0.05s ease-in-out, box-shadow .12s ease-in-out;
       @apply relative px-5 py-2 bg-neutral-800 text-white rounded-md font-bold cursor-pointer;
     }

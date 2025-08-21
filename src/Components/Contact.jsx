@@ -5,7 +5,7 @@ const Contact = ({ dropDownOpen }) => {
         <div className="flex items-stretch gap-6 md:gap-[4rem] w-full">
           <section className="flex flex-col gap-4 justify-center items-center paragraph-animate-right w-full">
             <h1 className="text-4xl/tight lg:text-5xl/tight text-center font-bold">Keep in&nbsp;<span className="text-green-400">touch</span></h1>
-            <p className="text-base lg:text-lg text-center">If you're interested in my work, feel free to contact me @</p>
+            <p className="text-base lg:text-lg text-center">If you're interested in my work, feel free to contact me <span className="text-green-400">@</span></p>
             <div className="flex justify-center gap-5 pt-5 w-full">
               <a href="https://www.linkedin.com/in/a-jxson" target="_blank">
                 <svg className="transition-[fill] relative hover:fill-green-400 w-[26px] z-1" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" fill="#FFF">
@@ -34,32 +34,50 @@ const Contact = ({ dropDownOpen }) => {
           </section>
           <div className="flex items-center justify-center gap-4 md:flex-col">
             <div className="flex-1 border-t md:border-t-0 md:border-l border-green-400"></div>
-            <p className="px-2 text-green-400 or">or</p>
+            <p className="px-2 text-green-400">or</p>
             <div className="flex-1 border-t md:border-t-0 md:border-l border-green-400"></div>
           </div>
-          <section className="flex justify-center items-center w-full opacity-0">
+          <section className="flex justify-center items-center w-full">
             <form
-              className="flex flex-col gap-4 w-full px-15 py-7 rounded-md form paragraph-animate-left">
-              <div className="w-full">
+              className="flex flex-col gap-[2rem] w-full px-15 py-9 rounded-3xl form paragraph-animate-left">
+              <div className="w-full floating-label">
+                <textarea
+                  className="w-full border-b-2 border-neutral-700 hover:border-green-400 transition-all outline-0 input resize-none"
+                  rows={1}
+                  type="text"
+                  name="email"
+                  placeholder=" " />
                 <label
                   className="text-sm"
                   htmlFor="email"
                 >Email</label>
+              </div>
+              <div className="w-full floating-label">
                 <textarea
-                  className="w-full border-b-4 border-neutral-800 hover:border-green-400 focus:border-green-400 transition-all outline-0 input resize-none"
+                  className="w-full border-b-2 border-neutral-700 hover:border-green-400 transition-all outline-0 input resize-none"
                   rows={1}
                   type="text"
-                  name="email" />
-              </div>
-              <div className="w-full">
+                  name="email"
+                  placeholder=" " />
                 <label
                   className="text-sm"
-                  htmlFor="message">Message</label>
+                  htmlFor="subject"
+                >Subject</label>
+              </div>
+              <div className="w-full floating-label">
                 <textarea
-                  className="w-full border-b-4 border-neutral-800 hover:border-green-400 focus:border-green-400 transition-all outline-0 input mx-auto resize-none"
+                  className="w-full border-b-2 border-neutral-700 hover:border-green-400 transition-all outline-0 input resize-none"
                   rows={4}
                   type="text"
-                  name="message" />
+                  name="message"
+                  placeholder=" " />
+                <label
+                  className="text-sm"
+                  htmlFor="message">Message
+                </label>
+              </div>
+              <div className="flex justify-end w-full">
+                <button className="flex text-base font-bold bg-emerald-700 text-green-50 justify-end cursor-pointer px-9 py-5 rounded-lg hover:brightness-85 transition-all submit-button">Send Message</button>
               </div>
             </form>
           </section>
