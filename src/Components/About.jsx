@@ -20,8 +20,8 @@ const About = ({ dropDownOpen }) => {
   useEffect(() => {
     const handleSecondRow = () => {
       if (window.scrollY > 250) { setSecondRow(true); const timeout = setTimeout(() => setDelaySecondRow(true), 300) }
-      if (window.scrollY > 750) { setThirdRow(true); const timeout = setTimeout(() => setDelayThirdRow(true), 300) }
-      if (window.scrollY > 1300) { setFourthRow(true); }
+      if (window.scrollY > 600) { setThirdRow(true); const timeout = setTimeout(() => setDelayThirdRow(true), 300) }
+      if (window.scrollY > 1200) { setFourthRow(true); }
     };
     window.addEventListener("scroll", handleSecondRow);
     handleSecondRow();
@@ -31,11 +31,11 @@ const About = ({ dropDownOpen }) => {
   return (
     <>
       <div className={"about-wrapper" + (dropDownOpen ? " active" : "")}>
-        <section className="flex flex-col-reverse items-stretch md:flex-row gap-8 md:gap-20 pb-10 md:pb-20 m-[6%] mt-[5rem] sm:mt-[7rem] md:mt-[8rem] lg:mt-[11rem]">
+        <section className="flex flex-col-reverse items-stretch md:flex-row gap-8 md:gap-20 pb-10 md:pb-15 m-[6%] mt-[5rem] sm:mt-[7rem] md:mt-[8rem] lg:mt-[11rem]">
           <div className={`${firstRow ? "flex opacity-100 paragraph-animate-left" : "opacity-0"} flex-col justify-center gap-4 w-full`}>
-            <h1 className="text-4xl/tight lg:text-6xl/tight font-bold text-center md:text-left">My internship got me into <span className="text-green-400">web development</span></h1>
-            <p className="text-lg lg:text-xl text-justify">I started my journey in web development with WordPress, despite having little knowledge of the fundamentals at the time.
-              The challenge motivated me to strengthen my skills, beginning with HTML and CSS, and later moving on to JavaScript.
+            <h1 className="text-4xl/tight lg:text-5xl/tight font-bold text-center md:text-left">My internship got me into <span className="text-green-400">web development</span></h1>
+            <p className="text-base lg:text-lg text-justify">I started my journey in web development with WordPress, despite having little knowledge of the fundamentals at the time.
+              The challenge motivated me to strengthen my skills, beginning with HTML and CSS, and later moving on to JavaScript. For context, this was around April of 2025.
             </p>
           </div>
           <div className={`${delayFirstRow ? "flex opacity-100 image-animate" : "opacity-0"} relative justify-center w-full`}>
@@ -52,7 +52,7 @@ const About = ({ dropDownOpen }) => {
             </svg>
           </div>
         </section>
-        <section className="flex flex-col md:flex-row gap-8 md:gap-20 py-10 md:py-30 items-stretch justify-center m-[6%]">
+        <section className="flex flex-col md:flex-row gap-8 md:gap-20 py-10 md:py-15 items-stretch justify-center m-[6%]">
           <div className={`${secondRow ? "flex paragraph-animate-left opacity-100" : "opacity-0"} relative justify-center w-full`}>
             <img
               className="relative rounded-lg object-cover md:rotate-1 z-2 about-img"
@@ -70,15 +70,15 @@ const About = ({ dropDownOpen }) => {
             </svg>
           </div>
           <div className={`${delaySecondRow ? "flex opacity-100 paragraph-animate-left" : "opacity-0"} flex-col justify-center gap-4 w-full`}>
-            <h1 className="text-4xl/tight lg:text-6xl/tight font-bold text-center md:text-left">During my <span className="text-green-400">leisure time</span></h1>
-            <p className="text-lg lg:text-xl text-justify">I honed my HTML and CSS skills to improve my front-end capabilities. Learning the fundamentals was very crucial for me before
+            <h1 className="text-4xl/tight lg:text-5xl/tight font-bold text-center md:text-left">During my <span className="text-green-400">leisure time</span></h1>
+            <p className="text-base lg:text-lg text-justify">I honed my HTML and CSS skills to improve my front-end capabilities. Learning the fundamentals was very crucial for me before
               going to the next step, so I decided to test my skills. This was the result.</p>
           </div>
         </section>
-        <section className="flex flex-col-reverse md:flex-row gap-8 md:gap-20 py-10 md:py-30 items-stretch justify-center m-[6%]">
+        <section className="flex flex-col-reverse md:flex-row gap-8 md:gap-20 py-10 md:py-15 items-stretch justify-center m-[6%]">
           <div className={`${delayThirdRow ? "flex opacity-100 paragraph-animate-right" : "opacity-0"} flex-col justify-center items-center gap-4 w-full`}>
-            <h1 className="text-4xl/tight lg:text-6xl/tight font-bold text-center md:text-left">After my <span className="text-green-400">internship</span></h1>
-            <p className="text-lg lg:text-xl text-justify">I continued my growth by learning JavaScript. As I created more projects, small may it look, I could feel the
+            <h1 className="text-4xl/tight lg:text-5xl/tight font-bold text-center md:text-left">After my <span className="text-green-400">internship</span></h1>
+            <p className="text-base lg:text-lg text-justify">I continued my growth by learning JavaScript. As I created more projects, small may it look, I could feel the
               skill level gradually increasing. This project is where I learned how API works.
             </p>
           </div>
@@ -99,8 +99,8 @@ const About = ({ dropDownOpen }) => {
         </section >
         <section className="flex flex-col gap-8 md:gap-20 py-40 md:py-90 items-stretch justify-center m-[6%]">
           <div className={`${fourthRow ? "flex opacity-100 image-animate" : "opacity-0"} flex-col justify-center items-center gap-4 w-full`}>
-            <h1 className="text-4xl/tight lg:text-6xl/tight font-bold"><span className="text-green-400">Right now, I'm..</span></h1>
-            <p className="text-lg lg:text-xl text-justify md:w-[80%]">embarking on a new journey. As I graduate, I set my sights on the MERN stack and am currently focused on
+            <h1 className="text-4xl/tight lg:text-5xl/tight font-bold"><span className="text-green-400">Right now, I'm..</span></h1>
+            <p className="text-base lg:text-lg text-justify md:w-[80%]">embarking on a new journey. As I graduate, I set my sights on the MERN stack and am currently focused on
               learning React.js as part of that roadmap. This portfolio is created using React.js, CSS, and TailwindCSS.
             </p>
           </div>

@@ -3,7 +3,7 @@
 @layer navbar {
   .navbar {
     box-shadow: 10px 0 20px rgba(0, 0, 0, .5);
-    @apply sticky flex justify-evenly z-50 w-full px-[12.5%] inset-x-0 top-0 h-[80px] bg-neutral-800;
+    @apply sticky flex justify-evenly z-50 w-full px-[12.5%] inset-x-0 top-0 h-[70px] md:h-[80px] bg-neutral-800;
   }
 
   .left-section,
@@ -24,7 +24,7 @@
   }
 
   .right-section {
-    @apply flex justify-end gap-[7%] lg:gap-10 text-lg;
+    @apply flex justify-end sm:gap-5 lg:gap-6.5 text-base;
 
     & .hamburger {
       @apply px-[.6rem] py-[.5rem] hover:bg-[#1717172d] rounded-md cursor-pointer sm:hidden;
@@ -32,7 +32,7 @@
   }
 
   .dropdown-menu {
-    @apply fixed top-[80px] pt-2 gap-1 left-0 w-full bg-neutral-800 flex flex-col items-start justify-start px-[12.5%] z-100 overflow-hidden;
+    @apply fixed top-[70px] pt-2 shrink-0 left-0 w-full bg-neutral-800 flex flex-col items-start justify-start px-[10.5%] z-100 overflow-hidden;
   }
 }
 
@@ -63,13 +63,13 @@
   }
 
   to {
-    height: 160px;
+    height: 190px;
   }
 }
 
 @keyframes dropdown-slide-up {
   from {
-    height: 160px;
+    height: 190px;
   }
 
   to {
@@ -94,7 +94,7 @@
   bottom: 0;
   height: 2px;
   width: 0;
-  box-shadow: 0 0 30px #05df72;
+  box-shadow: 0 -4px 30px #05df72;
   background-color: #05df72;
   transition: width .15s ease-in-out, text-shadow .15s ease-in-out;
 }

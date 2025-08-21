@@ -17,7 +17,7 @@ const Home = ({ dropDownOpen, resetMessage, setCurrentIndex }) => {
     const timeout2 = setTimeout(() => {
       setShowRight(true);
     }, 300);
-    return () => clearTimeout(timeout2);
+    return () => clearTimeout(timeout2); ty
   }, []);
   return (
     <>
@@ -38,7 +38,6 @@ const Home = ({ dropDownOpen, resetMessage, setCurrentIndex }) => {
             </NavLink>
           </div>
           <Socials />
-
         </section>
         <section className={`${showRight ? "flex opacity-100 paragraph-animate-right" : "opacity-0"} right-wrapper`}>
           <div>

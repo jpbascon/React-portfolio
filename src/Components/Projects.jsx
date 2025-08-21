@@ -25,8 +25,8 @@ const Projects = ({ dropDownOpen }) => {
   return (
     <>
       <div className={"flex flex-col items-center justify-center mt-[3rem] m-[6%] md:mt-[6rem] lg:mt-[10rem] projects-wrapper" + (dropDownOpen ? " active" : " ")}>
-        <section className="md:pb-10 lg:pb-30">
-          <h1 className="text-4xl/tight lg:text-6xl/tight font-bold text-center md:text-left paragraph-animate-right">
+        <section className="md:pb-10 lg:pb-15">
+          <h1 className="text-4xl/tight lg:text-5xl/tight font-bold text-center md:text-left paragraph-animate-right">
             Here are some of my <span className="text-green-400">favorites</span>
           </h1>
         </section>
@@ -39,8 +39,8 @@ const Projects = ({ dropDownOpen }) => {
             ></img>
           </div>
           <div className={`${delayFirstRow ? "opacity-100 paragraph-animate-left" : "opacity-0"} flex flex-col gap-4 w-full`}>
-            <a className="text-4xl/tight lg:text-6xl/tight font-bold text-left movie-link-underline w-fit" href="https://react-1-0-2.vercel.app/"><span className="text-green-400">Movie Application</span></a>
-            <p className="text-lg lg:text-xl text-justify">Movie application with API integration using React.js, Tailwind CSS, Javascript, and Appwrite. Implemented trendings based on user's interaction.
+            <a className="text-4xl/tight lg:text-5xl/tight font-bold text-left movie-link-underline w-fit" href="https://react-1-0-2.vercel.app/"><span className="text-green-400">Movie Explorer</span></a>
+            <p className="text-base lg:text-lg text-justify">Movie application with API integration using React.js, Tailwind CSS, Javascript, and Appwrite. Implemented trendings based on user's interaction.
               Optimized search function using debounced to enhance the software's performance.
             </p>
           </div>
@@ -54,8 +54,8 @@ const Projects = ({ dropDownOpen }) => {
             ></img>
           </div>
           <div className={`${delaySecondRow ? "opacity-100 paragraph-animate-left" : "opacity-0"} flex flex-col gap-4 w-full`}>
-            <a className="text-4xl/tight lg:text-6xl/tight font-bold text-left movie-link-underline w-fit" href="https://2-0-3.vercel.app/"><span className="text-green-400">Simple E-commerce product cart</span></a>
-            <p className="text-lg lg:text-xl text-justify">Simple e-commerce with a local storage API integration. Created with HTML, CSS, and JavaScript.
+            <a className="text-4xl/tight lg:text-5xl/tight font-bold text-left movie-link-underline w-fit" href="https://2-0-3.vercel.app/"><span className="text-green-400">E-Commerce Cart System</span></a>
+            <p className="text-base lg:text-lg text-justify">Simple e-commerce with a local storage API integration. Created with HTML, CSS, and JavaScript.
             </p>
           </div>
         </section>
