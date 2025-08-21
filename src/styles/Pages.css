@@ -102,15 +102,15 @@
     }
 
     & .links {
-      @apply flex gap-7 md:mt-[7rem];
+      @apply flex gap-7 md:mt-[5rem];
     }
 
     & .links a .linkedin {
-      @apply transition-[fill] relative hover:fill-green-400 w-[26px] md:w-[35px] z-1;
+      @apply transition-[fill] relative hover:fill-green-400 w-[26px] md:w-[30px] z-1;
     }
 
     & .links a .github {
-      @apply transition-[fill] relative hover:fill-green-400 w-[26px] md:w-[35px] z-1;
+      @apply transition-[fill] relative hover:fill-green-400 w-[26px] md:w-[30px] z-1;
     }
   }
 
