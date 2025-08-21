@@ -1,8 +1,8 @@
 import Socials from './Socials.jsx';
 import { useState, useEffect } from 'react';
-/* import { NavLink } from "react-router-dom"; */
+import { NavLink } from "react-router-dom";
 
-const Home = ({ dropDownOpen/* , resetMessage, setCurrentIndex */ }) => {
+const Home = ({ dropDownOpen, resetMessage, setCurrentIndex }) => {
   const [showLeft, setShowLeft] = useState(false);
   const [showRight, setShowRight] = useState(false);
 
@@ -30,12 +30,12 @@ const Home = ({ dropDownOpen/* , resetMessage, setCurrentIndex */ }) => {
             </p>
           </div>
           <div className="flex items-center gap-10 flex-col">
-            {/* <NavLink
+            <NavLink
               onClick={() => { setCurrentIndex(3); resetMessage(); }}
               to="/contact"
               className="text-lg button">
               Contact
-            </NavLink> */}
+            </NavLink>
           </div>
           <Socials />
 
@@ -44,7 +44,8 @@ const Home = ({ dropDownOpen/* , resetMessage, setCurrentIndex */ }) => {
           <div>
             <img
               alt="My picture in a toga"
-              src="./jasonb.jpeg" />
+              src="/jasonb.jpeg"
+              loading="eager" />
           </div>
         </section>
       </div>
