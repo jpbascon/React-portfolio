@@ -19,8 +19,8 @@ const About = ({ dropDownOpen }) => {
   }, [])
   useEffect(() => {
     const handleSecondRow = () => {
-      if (window.scrollY > 250) { setSecondRow(true); const timeout = setTimeout(() => setDelaySecondRow(true), 300) }
-      if (window.scrollY > 600) { setThirdRow(true); const timeout = setTimeout(() => setDelayThirdRow(true), 300) }
+      if (window.scrollY > 200) { setSecondRow(true); const timeout = setTimeout(() => setDelaySecondRow(true), 300) }
+      if (window.scrollY > 500) { setThirdRow(true); const timeout = setTimeout(() => setDelayThirdRow(true), 300) }
       if (window.scrollY > 1200) { setFourthRow(true); }
     };
     window.addEventListener("scroll", handleSecondRow);
@@ -32,13 +32,13 @@ const About = ({ dropDownOpen }) => {
     <>
       <div className={"about-wrapper" + (dropDownOpen ? " active" : "")}>
         <section className="flex flex-col-reverse items-stretch md:flex-row gap-8 md:gap-20 pb-10 md:pb-15 m-[6%] mt-[5rem] sm:mt-[7rem] md:mt-[8rem] lg:mt-[11rem]">
-          <div className={`${firstRow ? "flex opacity-100 paragraph-animate-left" : "opacity-0"} flex-col justify-center gap-4 w-full`}>
+          <div className={`${delayFirstRow ? "flex opacity-100 paragraph-animate-right" : "opacity-0"} flex-col justify-center gap-4 w-full`}>
             <h1 className="text-4xl/tight lg:text-5xl/tight font-bold text-center md:text-left">My internship got me into <span className="text-green-400">web development</span></h1>
             <p className="text-base lg:text-lg text-justify">I started my journey in web development with WordPress, despite having little knowledge of the fundamentals at the time.
               The challenge motivated me to strengthen my skills, beginning with HTML and CSS, and later moving on to JavaScript. For context, this was around April of 2025.
             </p>
           </div>
-          <div className={`${delayFirstRow ? "flex opacity-100 image-animate" : "opacity-0"} relative justify-center w-full`}>
+          <div className={`${firstRow ? "flex opacity-100 paragraph-animate-right" : "opacity-0"} relative justify-center w-full`}>
             <img
               className="relative rounded-lg object-cover md:-rotate-1 about-img"
               src="./wordpress.png"

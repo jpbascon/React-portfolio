@@ -36,12 +36,26 @@
     @apply opacity-[.1] pointer-events-none;
   }
 
+  .spacers {
+    animation: spacer .45s cubic-bezier(.4, 0, .2, .1);
+  }
+
   .form {
     box-shadow: 0 0 25px rgba(0, 0, 0, .5);
   }
 
   .submit-button {
     font-family: "Roboto";
+  }
+}
+
+@keyframes spacer {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 
