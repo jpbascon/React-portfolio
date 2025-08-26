@@ -17,7 +17,7 @@ const Home = ({ dropDownOpen, resetMessage, setCurrentIndex }) => {
     const timeout2 = setTimeout(() => {
       setShowRight(true);
     }, 300);
-    return () => clearTimeout(timeout2); ty
+    return () => clearTimeout(timeout2);
   }, []);
   return (
     <>
