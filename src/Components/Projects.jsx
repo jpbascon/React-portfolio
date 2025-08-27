@@ -34,7 +34,7 @@ const Projects = ({ dropDownOpen }) => {
           <div className={`${firstRow ? "opacity-100 paragraph-animate-left" : "opacity-0"} w-full`}>
             <img
               className="rounded-lg about-img"
-              src="./movie-app.png"
+              src="/movie-app.png"
               alt="Movie Application"
             ></img>
           </div>
@@ -49,13 +49,13 @@ const Projects = ({ dropDownOpen }) => {
           <div className={`${secondRow ? "opacity-100 paragraph-animate-left" : "opacity-0"} w-full`}>
             <img
               className="rounded-lg about-img"
-              src="./javascript.png"
+              src="/Pursuit.png"
               alt="E-commerce website application"
             ></img>
           </div>
           <div className={`${delaySecondRow ? "opacity-100 paragraph-animate-left" : "opacity-0"} flex flex-col gap-4 w-full`}>
-            <a className="text-4xl/tight lg:text-5xl/tight font-bold text-left movie-link-underline w-fit" href="https://2-0-3.vercel.app/"><span className="text-green-400">E-Commerce Cart System</span></a>
-            <p className="text-base lg:text-lg text-justify">Simple e-commerce with a local storage API integration. Created with HTML, CSS, and JavaScript.
+            <a className="text-4xl/tight lg:text-5xl/tight font-bold text-left movie-link-underline w-fit" href="https://pursuit-pi.vercel.app"><span className="text-green-400">Pursuit</span></a>
+            <p className="text-base lg:text-lg text-justify">A social media app where people can share their goals and achievements. Currently under development
             </p>
           </div>
         </section>
