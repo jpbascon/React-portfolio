@@ -30,32 +30,32 @@ const Projects = ({ dropDownOpen }) => {
             Here are some of my <span className="text-green-400">favorites</span>
           </h1>
         </section>
-        <section className="flex flex-col md:flex-row items-center justify-center gap-10 py-20 w-full">
+        <section className="flex flex-col md:flex-row py-10 md:py-20 items-center justify-center gap-10 w-full">
           <div className={`${firstRow ? "opacity-100 paragraph-animate-left" : "opacity-0"} w-full`}>
-            <img
-              className="rounded-lg about-img"
-              src="/movie-app.png"
-              alt="Movie Application"
-            ></img>
-          </div>
-          <div className={`${delayFirstRow ? "opacity-100 paragraph-animate-left" : "opacity-0"} flex flex-col gap-4 w-full`}>
-            <a className="text-4xl/tight lg:text-5xl/tight font-bold text-left movie-link-underline w-fit" href="https://react-1-0-2.vercel.app/"><span className="text-green-400">Movie Explorer</span></a>
-            <p className="text-base lg:text-lg text-justify">Movie application with API integration using React.js, Tailwind CSS, Javascript, and Appwrite. Implemented trendings based on user's interaction.
-              Optimized search function using debounced to enhance the software's performance.
-            </p>
-          </div>
-        </section>
-        <section className="flex flex-col md:flex-row items-center justify-center gap-10 py-20 w-full">
-          <div className={`${secondRow ? "opacity-100 paragraph-animate-left" : "opacity-0"} w-full`}>
             <img
               className="rounded-lg about-img"
               src="/Pursuit.png"
               alt="E-commerce website application"
             ></img>
           </div>
-          <div className={`${delaySecondRow ? "opacity-100 paragraph-animate-left" : "opacity-0"} flex flex-col gap-4 w-full`}>
+          <div className={`${delayFirstRow ? "opacity-100 paragraph-animate-left" : "opacity-0"} flex flex-col gap-4 w-full`}>
             <a className="text-4xl/tight lg:text-5xl/tight font-bold text-left movie-link-underline w-fit" href="https://pursuit-pi.vercel.app"><span className="text-green-400">Pursuit</span></a>
             <p className="text-base lg:text-lg text-justify">A social media app where people can share their goals and achievements. Currently under development
+            </p>
+          </div>
+        </section>
+        <section className="flex flex-col md:flex-row py-10 md:py-20 items-center justify-center gap-10 w-full">
+          <div className={`${secondRow ? "opacity-100 paragraph-animate-left" : "opacity-0"} w-full`}>
+            <img
+              className="rounded-lg about-img"
+              src="/movie-app.png"
+              alt="Movie Application"
+            ></img>
+          </div>
+          <div className={`${delaySecondRow ? "opacity-100 paragraph-animate-left" : "opacity-0"} flex flex-col gap-4 w-full`}>
+            <a className="text-4xl/tight lg:text-5xl/tight font-bold text-left movie-link-underline w-fit" href="https://react-1-0-2.vercel.app/"><span className="text-green-400">Movie Explorer</span></a>
+            <p className="text-base lg:text-lg text-justify">Movie application with API integration using React.js, Tailwind CSS, Javascript, and Appwrite. Implemented trendings based on user's interaction.
+              Optimized search function using debounced to enhance the software's performance.
             </p>
           </div>
         </section>
